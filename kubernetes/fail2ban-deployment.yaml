@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fail2ban
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fail2ban
+  template:
+    metadata:
+      labels:
+        app: fail2ban
+    spec:
+      containers:
+        - name: fail2ban
+          image: linuxserver/fail2ban:latest
+          ports:
+            - containerPort: 22
