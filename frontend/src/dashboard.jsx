@@ -1,6 +1,9 @@
 import React from 'react';
 import './DashboardEmbed.css';
-
+import dashboard1 from './images/dashboards/dashboard1.png';
+import dashboard2 from './images/dashboards/dashboard2.png';
+import dashboard3 from './images/dashboards/dashboard3.png';
+import dashboard4 from './images/dashboards/dashboard4.png';
 
 const Header = () => {
   return (
@@ -27,49 +30,53 @@ const DashboardEmbed = () => {
         <div className="dashboard">
           <h2>Dashboard 1</h2>
           <div className="iframe-container">
-          <iframe
-              src="http://localhost:3001/public/question/bcb95dfb-e227-480a-a65e-7c2753f7d0c3"
-              frameborder="0"
+          <div className="image-container">
+            <img
+              src={dashboard1}
+              alt="Dashboard 1"
               width="800"
               height="600"
-              allowtransparency
-          ></iframe>
+            />
+          </div>
           </div>
         </div>
         <div className="dashboard">
           <h2>Dashboard 2</h2>
           <div className="iframe-container">
-          <iframe
-            src="http://localhost:3001/public/question/98753eac-a44f-45ba-8df3-08a9ef61575a"
-            frameborder="0"
-            width="800"
-            height="600"
-            allowtransparency
-          ></iframe>
+          <div className="image-container">
+            <img
+              src={dashboard2}
+              alt="Dashboard 2"
+              width="800"
+              height="600"
+            />
+          </div>
           </div>
         </div>
         <div className="dashboard">
           <h2>Dashboard 3</h2>
           <div className="iframe-container">
-          <iframe
-            src="http://localhost:3001/public/question/fb572a05-1e74-4149-b984-45a8bd1bb28c"
-            frameborder="0"
-            width="800"
-            height="600"
-            allowtransparency
-          ></iframe>
+          <div className="image-container">
+            <img
+              src={dashboard3}
+              alt="Dashboard 3"
+              width="800"
+              height="600"
+            />
+          </div>
           </div>
         </div>
         <div className="dashboard">
           <h2>Dashboard 4</h2>
           <div className="iframe-container">
-          <iframe
-            src="http://localhost:3001/public/question/e53087bd-b6d8-4b35-b166-42f904bdab1d"
-            frameborder="0"
-            width="800"
-            height="600"
-            allowtransparency
-          ></iframe>
+          <div className="image-container">
+            <img
+              src={dashboard4}
+              alt="Dashboard 4"
+              width="800"
+              height="600"
+            />
+          </div>
           </div>
         </div>
       </div>
