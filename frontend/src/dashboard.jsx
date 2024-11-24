@@ -1,10 +1,6 @@
 import React from 'react';
 import './DashboardEmbed.css';
 
-import dashboard1Img from './images/dashboards/dashboard1.png';
-import dashboard2Img from './images/dashboards/dashboard2.png';
-import dashboard3Img from './images/dashboards/dashboard3.png';
-import dashboard4Img from './images/dashboards/dashboard4.png';
 
 const Header = () => {
   return (
@@ -31,25 +27,49 @@ const DashboardEmbed = () => {
         <div className="dashboard">
           <h2>Dashboard 1</h2>
           <div className="iframe-container">
-            <img src={dashboard1Img} alt="Dashboard 1" width="800" height="600" />
+          <iframe
+              src="http://localhost:3001/public/question/bcb95dfb-e227-480a-a65e-7c2753f7d0c3"
+              frameborder="0"
+              width="800"
+              height="600"
+              allowtransparency
+          ></iframe>
           </div>
         </div>
         <div className="dashboard">
           <h2>Dashboard 2</h2>
           <div className="iframe-container">
-            <img src={dashboard2Img} alt="Dashboard 2" width="800" height="600" />
+          <iframe
+            src="http://localhost:3001/public/question/98753eac-a44f-45ba-8df3-08a9ef61575a"
+            frameborder="0"
+            width="800"
+            height="600"
+            allowtransparency
+          ></iframe>
           </div>
         </div>
         <div className="dashboard">
           <h2>Dashboard 3</h2>
           <div className="iframe-container">
-            <img src={dashboard3Img} alt="Dashboard 3" width="800" height="600" />
+          <iframe
+            src="http://localhost:3001/public/question/fb572a05-1e74-4149-b984-45a8bd1bb28c"
+            frameborder="0"
+            width="800"
+            height="600"
+            allowtransparency
+          ></iframe>
           </div>
         </div>
         <div className="dashboard">
           <h2>Dashboard 4</h2>
           <div className="iframe-container">
-            <img src={dashboard4Img} alt="Dashboard 4" width="800" height="600" />
+          <iframe
+            src="http://localhost:3001/public/question/e53087bd-b6d8-4b35-b166-42f904bdab1d"
+            frameborder="0"
+            width="800"
+            height="600"
+            allowtransparency
+          ></iframe>
           </div>
         </div>
       </div>
