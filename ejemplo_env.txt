@@ -1,0 +1,12 @@
+#Ejemplo de .env para que funcione la conexión con la BDD, debe estar en el directorio raíz.
+
+MYSQL_ROOT_PASSWORD=mi_contraseña_root # Valor de ejemplo
+MYSQL_DATABASE=social_media_db
+MYSQL_USER=unax
+MYSQL_PASSWORD= mi_contraseña # Valor de ejemplo
+
+# Variables para el backend
+DB_HOST=mysql
+DB_USER=unax
+DB_PASSWORD=mi_contraseña
+DB_NAME=social_media_db
